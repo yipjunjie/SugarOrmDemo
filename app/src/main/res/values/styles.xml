@@ -5,7 +5,259 @@
         <!-- Customize your theme here. -->
         <item name="colorPrimary">@color/colorPrimary</item>
         <item name="colorPrimaryDark">@color/colorPrimaryDark</item>
-        <item name="colorAccent">@color/colorAccent</item>
+        <item name="colorAccent">@color/gray4c</item>
+        <item name="windowNoTitle">true</item>
     </style>
+
+    <!--&lt;!&ndash; picture theme. &ndash;&gt;-->
+    <!--<style name="PictureTheme" parent="@android:style/Theme.Translucent.NoTitleBar">-->
+        <!--<item name="windowNoTitle">true</item>-->
+        <!--<item name="android:windowFullscreen">true</item>-->
+    <!--</style>-->
+
+    <!-- 字体,标题 -->
+    <style name="Font_title_18">
+        <item name="android:textSize">18sp</item>
+        <item name="android:textColor">#FFFFFF</item>
+    </style>
+
+    <!-- 字体,标题 -->
+    <style name="Font_title_17">
+        <item name="android:textSize">17sp</item>
+        <item name="android:textColor">#FFFFFF</item>
+    </style>
+
+    <!-- 字体,标题 -->
+    <style name="Font_title_16">
+        <item name="android:textSize">16sp</item>
+        <item name="android:textColor">#FFFFFF</item>
+    </style>
+
+    <!-- 字体,标题,确定 -->
+    <style name="Font_title_ok_12">
+        <item name="android:textSize">12sp</item>
+        <item name="android:textColor">#FFFFFF</item>
+    </style>
+
+    <!-- 字体,标题 -->
+    <style name="Font_title_14">
+        <item name="android:textSize">14sp</item>
+        <item name="android:textColor">#FFFFFF</item>
+    </style>
+
+    <!-- 字体,页面,左边标题 -->
+    <style name="Font_page_title_24_4c">
+        <item name="android:textSize">24sp</item>
+        <item name="android:textColor">#4c4c4c</item>
+    </style>
+
+    <!-- 字体,页面,左边标题 -->
+    <style name="Font_page_title_16">
+        <item name="android:textSize">16sp</item>
+        <item name="android:textColor">#4c4c4c</item>
+    </style>
+
+    <!-- 字体,页面,左边标题 -->
+    <style name="Font_page_title_18">
+        <item name="android:textSize">18sp</item>
+        <item name="android:textColor">#4c4c4c</item>
+    </style>
+
+    <!-- 字体,编辑 -->
+    <style name="Font_eit_12">
+        <item name="android:textSize">12sp</item>
+        <item name="android:textColor">#a4a4a4</item>
+    </style>
+
+    <!-- 字体,页面 -->
+    <style name="Font_page_12_4c">
+        <item name="android:textSize">12sp</item>
+        <item name="android:textColor">#4c4c4c</item>
+    </style>
+
+    <!-- 字体,页面 -->
+    <style name="Font_page_10_4c">
+        <item name="android:textSize">10sp</item>
+        <item name="android:textColor">#4c4c4c</item>
+    </style>
+
+    <!-- 字体,页面 -->
+    <style name="Font_page_12_c8">
+        <item name="android:textSize">12sp</item>
+        <item name="android:textColor">#c8c8c8</item>
+    </style>
+
+    <!-- 字体,页面 -->
+    <style name="Font_page_10_a4">
+        <item name="android:textSize">10sp</item>
+        <item name="android:textColor">#a4a4a4</item>
+    </style>
+
+    <!-- 字体,页面 -->
+    <style name="Font_page_12_a4">
+        <item name="android:textSize">12sp</item>
+        <item name="android:textColor">#a4a4a4</item>
+    </style>
+
+    <!-- 字体,页面 -->
+    <style name="Font_page_14_a4">
+        <item name="android:textSize">14sp</item>
+        <item name="android:textColor">#a4a4a4</item>
+    </style>
+
+    <!-- 字体,页面 -->
+    <style name="Font_page_16_a4">
+        <item name="android:textSize">16sp</item>
+        <item name="android:textColor">#a4a4a4</item>
+    </style>
+
+    <!-- 字体,页面 -->
+    <style name="Font_page_18_a4">
+        <item name="android:textSize">18sp</item>
+        <item name="android:textColor">#a4a4a4</item>
+    </style>
+
+    <!-- 字体,页面 -->
+    <style name="Font_page_12_d9">
+        <item name="android:textSize">12sp</item>
+        <item name="android:textColor">#d9d9d9</item>
+    </style>
+
+    <!-- 字体,页面 -->
+    <style name="Font_page_11_d9">
+        <item name="android:textSize">11sp</item>
+        <item name="android:textColor">#d9d9d9</item>
+    </style>
+
+    <!-- 字体,页面 -->
+    <style name="Font_page_10_d9">
+        <item name="android:textSize">10sp</item>
+        <item name="android:textColor">#d9d9d9</item>
+    </style>
+
+    <!-- 字体,页面 -->
+    <style name="Font_page_14_d9">
+        <item name="android:textSize">14sp</item>
+        <item name="android:textColor">#d9d9d9</item>
+    </style>
+
+    <!-- 字体,页面 -->
+    <style name="Font_page_14_4c">
+        <item name="android:textSize">14sp</item>
+        <item name="android:textColor">#4c4c4c</item>
+    </style>
+
+    <!-- 字体,页面 -->
+    <style name="Font_page_16_4c">
+        <item name="android:textSize">16sp</item>
+        <item name="android:textColor">#4c4c4c</item>
+    </style>
+
+    <!-- 字体,页面 -->
+    <style name="Font_page_18_4c">
+        <item name="android:textSize">18sp</item>
+        <item name="android:textColor">#4c4c4c</item>
+    </style>
+
+    <!-- 字体,页面 -->
+    <style name="Font_group_title_14">
+        <item name="android:textSize">14sp</item>
+        <item name="android:textColor">#4c4c4c</item>
+    </style>
+
+    <!--日历的dialog -->
+    <style name="CalendarDialog" parent="android:style/Theme.Dialog">
+        <item name="android:windowBackground">@android:color/transparent</item>
+        <item name="android:windowNoTitle">true</item>
+        <item name="android:windowIsFloating">true</item>
+    </style>
+    <!--日历标题 -->
+    <style name="main_bar_text_style">
+        <item name="android:textColor">#5ec6f6</item>
+        <item name="android:textSize">18sp</item>
+    </style>
+
+
+    <style name="FullHeightDialog" parent="android:style/Theme.Dialog">
+        <item name="android:windowBackground">@android:color/transparent</item>
+        <item name="android:windowNoTitle">true</item>
+        <item name="android:windowIsFloating">true</item>
+    </style>
+
+
+    <!-- 字体,页面 -->
+    <style name="Font_group_title">
+        <item name="android:textSize">14sp</item>
+        <item name="android:textColor">#404040</item>
+    </style>
+
+
+    <!-- 字体,内编人员详情 -->
+    <style name="internal_people_details_font">
+        <item name="android:textSize">14sp</item>
+        <item name="android:textColor">#404040</item>
+    </style>
+
+    <!-- 添加外编人员对话框的editText -->
+    <style name="dialog_add_forign_edit_text">
+        <item name="android:layout_gravity">end</item>
+        <item name="android:textSize">14sp</item>
+        <item name="android:background">@null</item>
+        <item name="android:layout_height">wrap_content</item>
+        <item name="android:layout_width">wrap_content</item>
+    </style>
+
+    <style name="CustomDialog" parent="android:style/Theme.Dialog">
+        <!-- 背景颜色及透明程度 -->
+        <item name="android:windowBackground">@android:color/transparent</item>
+        <!-- 是否有标题 -->
+        <item name="android:windowNoTitle">true</item>
+        <!-- 是否浮现在activity之上 -->
+        <item name="android:windowIsFloating">true</item>
+        <!-- 是否模糊 -->
+        <item name="android:backgroundDimEnabled">true</item>
+        <item name="android:windowFrame">@null</item>
+    </style>
+
+
+    <style name="first_page_text_other">
+        <item name="android:textSize">15sp</item>
+        <item name="android:textColor">@color/first_text_color</item>
+    </style>
+
+    <style name="text_19_black">
+        <item name="android:textSize">19sp</item>
+        <item name="android:textColor">@color/black</item>
+    </style>
+
+    <style name="text_15_gray">
+        <item name="android:textSize">15sp</item>
+        <item name="android:textColor">@color/content_info_corlor</item>
+    </style>
+
+
+
+    <style name="text_19_black_white">
+        <item name="android:textSize">19sp</item>
+        <item name="android:textColor">@color/text_white_black</item>
+    </style>
+
+    <!--标题栏标题-->
+    <style name="title_text">
+
+        <item name="android:textSize">20sp</item>
+        <item name="android:textColor">@android:color/white</item>
+    </style>
+
+    <style name="popup_menu_text">
+        <item name="android:textColor">@drawable/btn_addressmenu_text</item>
+        <item name="android:textSize">18sp</item>
+    </style>
+
+    <style name="Font_page_14_blue">
+        <item name="android:textSize">14sp</item>
+        <item name="android:textColor">@color/blue</item>
+    </style>
+
 
 </resources>

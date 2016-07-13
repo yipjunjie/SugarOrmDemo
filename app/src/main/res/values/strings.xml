@@ -1,3 +1,349 @@
 <resources>
-    <string name="app_name">SugarOrmDemo</string>
+    <string name="app_name">DMP</string>
+
+    <string name="add_main_task">添加主任务</string>
+    <string name="add_subtask">添加子任务</string>
+    <string name="edit_subtask">编辑子任务</string>
+    <string name="update_subtask">更新子任务</string>
+    <string name="ok">确定</string>
+    <string name="submit">提交</string>
+    <string name="task_name">任务名称</string>
+    <string name="task_name_hint">请输入任务名称</string>
+    <string name="date_of_commence_start">开工日期</string>
+    <string name="date_of_commence_end">结束日期</string>
+    <string name="date_of_commence_start_hint">请输入开工日期</string>
+    <string name="date_of_commence_end_hint">请输入开工日期</string>
+    <string name="date_of_commence">工&#160;&#160;&#160;&#160;&#160;&#160;&#160;&#160;期</string>
+    <string name="date_of_commence_hint">请输入工期</string>
+    <string name="remarks">备&#160;&#160;&#160;&#160;&#160;&#160;&#160;&#160;注</string>
+    <string name="constructor">施工人员</string>
+    <string name="constructor_hint">请选择施工人员</string>
+    <string name="cancel">取消</string>
+    <string name="person_selection">人员选择</string>
+    <string name="add_person">添加人员</string>
+    <string name="chooled">已选择</string>
+    <string name="remove">移除</string>
+    <string name="start_work">开工:</string>
+    <string name="end_work">结束:</string>
+    <string name="duration">工期:</string>
+    <string name="start_work_time">开工时间:</string>
+    <string name="person">人员:</string>
+
+    <string name="construction_plan">施工计划</string>
+    <string name="add_dety_man">添加负责人</string>
+    <string name="submit_consplan_success">提交施工计划成功</string>
+    <string name="failed_to_send_request">发送请求失败</string>
+    <string name="failed_to_send_timeout">发送请求超时</string>
+
+    <!--日历  中的标题-->
+    <string-array name="monthNum">
+        <item>JAN</item>
+        <item>FEB</item>
+        <item>MAR</item>
+        <item>APR</item>
+        <item>MAY</item>
+        <item>JUN</item>
+        <item>JUL</item>
+        <item>AUG</item>
+        <item>SEP</item>
+        <item>OCT</item>
+        <item>NOV</item>
+        <item>DEC</item>
+    </string-array>
+
+    <!--工程进度-->
+    <string name="projectprogress">工程进度</string>
+    <string name="startdate">开工日期</string>
+    <string name="enddate">竣工日期</string>
+    <string name="already_started">已开工:</string>
+    <string name="delay">延误:</string>
+    <string name="plan">计划</string>
+    <string name="actual">实际</string>
+    <string name="completed">已完成</string>
+
+    <!--对话框 -->
+    <string name="door_window_install">门窗安装</string>
+    <string name="edit_progress">填写进度</string>
+    <string name="task_change">任务变更</string>
+    <string name="extended_reason">超期原因</string>
+    <string name="confirm">确定</string>
+    <string name="put_progress">请输入进度值</string>
+    <string name="extended_reason_text">超期原因/顺延</string>
+
+    <!-- 人员列表 -->
+    <string name="person_list">人员列表</string>
+
+    <!--人员详情-->
+    <string name="foreign_people_details_title">外编人员详情</string>
+    <string name="internal_people_details_title">内编人员详情</string>
+    <string name="personal_info">个人资料</string>
+    <string name="head_portrait">头像</string>
+    <string name="name">姓名</string>
+    <string name="_id">工号</string>
+    <string name="account">账号</string>
+    <string name="post">职务</string>
+    <string name="sex">性别</string>
+    <string name="staff">编制</string>
+    <string name="staff_out">外编</string>
+    <string name="staff_in">内编</string>
+    <string name="phone">联系方式</string>
+    <string name="man">男</string>
+    <string name="woman">女</string>
+    <string name="scheduling_table">排班表</string>
+    <string name="month">月</string>
+    <string name="year">年</string>
+    <string name="password">密码</string>
+    <string-array name="week_days">
+        <item>日</item>
+        <item>一</item>
+        <item>二</item>
+        <item>三</item>
+        <item>四</item>
+        <item>五</item>
+        <item>六</item>
+    </string-array>
+
+    <string name="reset_password">重置密码</string>
+    <string name="modify_password">修改密码</string>
+    <string name="out_login">退出登录</string>
+    <string name="delete">删  除</string>
+
+
+    <!--添加外编人员-->
+    <!--<string name="add_foreign_people">添加外编人员</string>-->
+    <string name="add_foreign_people">添加人员</string>
+
+    <string name="take_picture">拍照</string>
+    <string name="select_in_carmera">从手机相册中选择</string>
+    <string name="please_input_name">请输入名字</string>
+    <string name="please_choose_post">请选择职务</string>
+    <string name="please_choose_sex">请选择性别</string>
+    <string name="please_input_phone">请输入电话号码</string>
+    <string name="please_input_eleven_phone">请输入11位的手机号码</string>
+    <string name="please_input_password">请输入密码</string>
+    <string name="please_input_password_access">密码至少9位最多18位</string>
+    <!--通讯录-->
+    <string name="apply_personnel">申请人员</string>
+    <string name="add_out_personnel">添加人员</string>
+    <!--<string name="apply_personnel">申请内编人员</string>-->
+    <!--<string name="add_out_personnel">添加外编人员</string>-->
+    <string name="is_confrim_out_login">是否确定退出</string>
+    <string name="old_password">旧密码</string>
+    <string name="please_input_old_password">请输入旧密码</string>
+    <string name="new_password">新密码</string>
+    <string name="please_input_new_password">请输入新密码</string>
+    <string name="confrim_password">确认密码</string>
+    <string name="please_input_confrim_password">请再次输入新密码</string>
+    <string name="new_password_not_consistent">新密码输入不一致</string>
+    <string name="login_only_can_input">qwertyuioplkjhgfdsazxcvbnmQWERTYUIOPLKJHGFDSAZXCVBNM1234567890</string>
+    <string name="old_password_is_not_null">旧密码不能为空</string>
+    <string name="new_password_is_not_null">新密码不能为空</string>
+    <string name="confrim_password_is_not_null">确认密码不能为空</string>
+
+    <string name="action_settings">Settings</string>
+    <string name="upload_pic">上传图片</string>
+    <string name="select_local_img">从相册选择</string>
+    <string name="Photograph">拍照</string>
+    <string name="picture_cutting">图片裁剪</string>
+    <string name="images">图片</string>
+    <string name="all_images">所有图片</string>
+    <string name="sure">确定</string>
+    <string name="apply_personnel_list">已申请人员列表</string>
+    <string name="project_name">项目名称</string>
+    <string name="personnel_role">人员职位</string>
+    <string name="put_personnel_role">请选择人员职位</string>
+    <string name="time_employment">用人时间</string>
+    <string name="role">职位</string>
+    <string name="cout">人数</string>
+    <string name="set_time_employment_error">用人时间设置错误</string>
+    <string name="number_employment">用人数量</string>
+    <string name="put_number_employment">请输入用人数量</string>
+    <string name="ren">人</string>
+    <string name="add_success">添加成功</string>
+    <string name="modify_success">修改密码成功，请重新登录</string>
+    <string name="add_failed">添加失败</string>
+    <string name="confirm_to_delete">确定要删除吗?</string>
+    <string name="delete_completed">删除成功</string>
+    <string name="please_input_account">请输入账户</string>
+    <string name="remember_password">记住密码</string>
+    <string name="login">登  录</string>
+    <string-array name="array_sex">
+        <item>男</item>
+        <item>女</item>
+    </string-array>
+    <string name="title_activity_login">Sign in</string>
+    <string name="my_task">我的任务</string>
+    <string name="readed">已读</string>
+    <string name="unread">未读</string>
+    <string name="out_record">出入库记录</string>
+    <string name="_record">入库记录</string>
+    <string name="out_material">出库</string>
+    <string name="in_material">入库</string>
+
+    <!-- 材料库 -->
+    <string name="time">时间</string>
+    <string name="material_name">材料名称</string>
+    <string name="material_format">规格</string>
+    <string name="out_record_num">出库量</string>
+    <string name="material_managers">经办人</string>
+    <string name="in_record_num">入库量</string>
+    <string name="purchase_apply">采购申请</string>
+    <string name="summit">提交</string>
+    <string name="document_title">单据名称</string>
+    <string name="approach_time">进场时间</string>
+    <string name="approach_time_two">进场时间 :</string>
+    <string name="apply_time">申请时间</string>
+    <string name="apply_time_two">申请时间 :</string>
+    <string name="unit">单位</string>
+    <string name="stock">库存</string>
+    <string name="num">数量</string>
+    <string name="price">单价</string>
+    <string name="please_input_document_name">请输入单据名称</string>
+    <string name="choose_time_tip">进场时间允许在选择时间3~5天范围内浮动</string>
+    <string name="your_application_has_been_submitted">您的申请已提交</string>
+    <string name="sum_price">总价 :  </string>
+    <string name="yuan">元</string>
+    <string name="material_follow">材料跟踪</string>
+    <string name="carried_out">进行中</string>
+    <string name="apply_person">申 请 人 ：</string>
+    <string name="remarks_two">备&#160;&#160;&#160;&#160;&#160;&#160;&#160;&#160;注 :</string>
+    <!-- 材料库 -->
+
+    <string name="material_main">主材</string>
+    <string name="material_aid">辅材</string>
+    <string name="material_library">材料库</string>
+    <string name="purchase_requisition">采购申请</string>
+    <string name="material_requisition">材料申请</string>
+    <string name="overdraft_requisition">超采申请</string>
+    <string name="material_tracking">材料跟踪</string>
+    <string name="out_of_storage_records">出入库记录</string>
+    <string name="device_management">设备管理</string>
+    <string name="material_select">材料选择</string>
+    <string name="inventory_name">单据名称</string>
+    <string name="can_not_exceed_the_number_of_stock">数量不能大于库存</string>
+    <string name="custom_material">自定义材料</string>
+    <string name="add_material">添加材料</string>
+    <string name="material_brands">材料品牌</string>
+    <string name="material_model">材料型号</string>
+    <string name="specification">规格</string>
+    <string name="specification_blank">规&#160;&#160;&#160;&#160;&#160;&#160;&#160;&#160;格</string>
+    <string name="material_brands_hint">请输入材料品牌</string>
+    <string name="material_name_hint">请输入材料名称</string>
+    <string name="material_model_hint">请输入材料型号</string>
+    <string name="specification_hint">请输入规格</string>
+    <string name="unit_hint">件</string>
+    <string name="unit_hint2">请输入单位</string>
+    <string name="type">类型</string>
+    <string name="num_hint">请输入数量</string>
+    <string name="price_hint">请输入单价</string>
+    <string name="type_hint">请选择类型</string>
+
+    <string name="pending_treatment">待处理</string>
+    <string name="already_under_orders">已下单</string>
+    <string name="already_hipped_as">已发货</string>
+    <string name="already_arrived">已到货</string>
+    <string name="material_out">材料出库</string>
+    <string name="material_in">材料入库</string>
+    <string name="manual_input_name">可手动输入姓名</string>
+    <string name="state">状态</string>
+    <string name="take_person">领取人:</string>
+    <string name="is_confirm_out_material">是否确定出库</string>
+    <string name="is_confirm_in_material">是否确定入库</string>
+    <string name="choose_project_stage">选择项目阶段</string>
+    <string name="choose_construction_stage">选择施工阶段</string>
+    <string name="edit_journal">写日志</string>
+    <string name="construction_stage">施工阶段</string>
+    <string name="today_summary">今日总结</string>
+    <string name="constuction_people_num">施工人数</string>
+
+    <string-array name="material_state">
+        <item>待处理</item>
+        <item>已下单</item>
+        <item>已发货</item>
+        <item>已到货</item>
+        <item>已入库</item>
+        <item>已出库</item>
+    </string-array>
+
+    <!-- TODO: Remove or change this placeholder text -->
+    <string name="hello_blank_fragment">Hello blank fragment</string>
+    <string name="construction_journal">施工日志</string>
+    <string name="construction_pic">施工图片</string>
+    <string name="my_journal">我的日志</string>
+    <string name="send">发送</string>
+    <string name="reply">回复</string>
+
+    <string name="login_to_send_request">登录失败</string>
+    <string name="login_to_send_timeout">登录超时</string>
+    <string name="day">天</string>
+    <string name="delays">延\u3000误:</string>
+    <string name="people">人\u3000员:</string>
+    <string name="worked">已开工:</string>
+    <string name="read_un">未阅读</string>
+    <string name="read_ed">已阅读</string>
+    <string name="historic_records">历史记录</string>
+    <string name="my_message">我的消息</string>
+    <string name="mark_readed">标记为已读</string>
+    <string name="update_completed">更新成功</string>
+    <string name="update_failed">更新失败</string>
+    <string name="input_people_is_cannot_null">请输入施工人数</string>
+    <string name="construction_journal_null">未编写日志</string>
+    <string name="please_choose">请选择</string>
+    <string name="please_choose_construction_stage">请选择施工阶段</string>
+
+    <string name="tracking_progress">进度跟踪</string>
+    <string name="contacts">通讯录</string>
+    <string name="personal_center">个人中心</string>
+    <string name="write_construction">写日志</string>
+    <string name="check_advice_not_null">审批意见不能为空</string>
+    <string name="please_choose_group">请选择分组</string>
+    <string name="grouping">分组</string>
+    <string-array name="diary_template">
+        <item>今日总结</item>
+        <item>报警日志</item>
+    </string-array>
+
+    <string-array name="diary_select_photo">
+        <item>拍照</item>
+        <item>从手机相册中选择</item>
+    </string-array>
+
+    <string name="please_input_content">请输入内容</string>
+    <string name="please_input_people_num">请输入施工人数</string>
+    <string name="material_date">入库日期</string>
+    <string name="out_material_date">出库日期</string>
+    <string name="apply_list_not_null">申请列表不能为空</string>
+    <string name="name_not_null">名称不能为空</string>
+    <string name="time_not_null">时间不能为空</string>
+    <string name="remove_success">移除成功</string>
+    <string name="sending">正在发送</string>
+    <string name="your_apply_is_success">您提交的申请已成功</string>
+    <string name="inlibrary_list_not_null">入库列表不能为空</string>
+    <string name="outlibrary_list_not_null">出库列表不能为空</string>
+    <string name="in_library_success">入库成功</string>
+    <string name="out_library_success">出库成功</string>
+    <string name="receiver_not_null">领取人不能为空</string>
+    <string name="material_count_not_0">材料数量不能为0</string>
+    <string name="material_price_not_0">材料价格不能为0</string>
+    <string name="material_count_not_stock">材料数量不能超过库存</string>
+    <string name="operate_fail">操作失败</string>
+    <string name="your_state_operate_success">您的状态已处理成功!</string>
+    <string name="please_input_extended_reason_text">请输入超期原因</string>
+    <string name="choole_categroy">请选择主辅材类型</string>
+    <string name="next">下一步</string>
+    <string name="duty_man_not_null">负责人不能为空</string>
+    <string name="main_tasks_start_time_before_project">主任务开工日期不能早于项目开工日期</string>
+    <string name="main_tasks_end_time_after_project">主任务结束日期不能晚于项目结束日期</string>
+    <string name="sub_tasks_start_time_before_main">子任务开工日期不能早于主任务开工日期</string>
+
+    <string-array name="week_chinese_str_array">
+        <item>日</item>
+        <item>一</item>
+        <item>二</item>
+        <item>三</item>
+        <item>四</item>
+        <item>五</item>
+        <item>六</item>
+    </string-array>
+
 </resources>

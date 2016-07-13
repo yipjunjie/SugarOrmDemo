@@ -8,7 +8,15 @@ import com.orm.SugarRecord;
 
 public class Book extends SugarRecord {
 
+    public String getName() {
+        return name;
+    }
 
+    public void setName(String name) {
+        this.name = name;
+    }
+
+    String name;
     String price;
     String edition;
 
