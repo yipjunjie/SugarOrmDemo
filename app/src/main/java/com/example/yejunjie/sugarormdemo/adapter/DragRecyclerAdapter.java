@@ -8,16 +8,13 @@ import android.view.View;
 import android.view.ViewGroup;
 import android.widget.ImageView;
 import android.widget.TextView;
-import android.widget.Toast;
 
 import com.example.yejunjie.sugarormdemo.Book;
-import com.example.yejunjie.sugarormdemo.Emp;
 
 import com.example.yejunjie.sugarormdemo.R;
 import com.example.yejunjie.sugarormdemo.view.DeleteDialog;
 import com.example.yejunjie.sugarormdemo.view.RecyclerViewDragHolder;
 
-import java.util.ArrayList;
 import java.util.List;
 
 import lib.lhh.fiv.library.FrescoImageView;
@@ -25,23 +22,21 @@ import lib.lhh.fiv.library.FrescoImageView;
 
 /**
  * 滑动删除
- * Create by yjj
+ * Created by yejunjie on 16/7/13
  */
 public class DragRecyclerAdapter extends RecyclerView.Adapter {
 
     private static final String TAG = "DragRecyclerAdapter";
     private Context mContext;
-    private int mGroup;
-//    private List<Emp> mEmpList;
     private List<Book> mBookList;
-    public DragRecyclerAdapter(Context context, int position, DragRectcleritemListener dragRectcleritemListener) {
+    public DragRecyclerAdapter(Context context,DragRectcleritemListener dragRectcleritemListener) {
         this.mContext = context;
-        this.mGroup = position;
         this.mDragRectcleritemListener = dragRectcleritemListener;
     }
 
     public void setData(List<Book> list) {
         mBookList = list;
+        notifyDataSetChanged();
     }
 
     @Override
@@ -54,7 +49,9 @@ public class DragRecyclerAdapter extends RecyclerView.Adapter {
         return new ItemHolder(mContext, bg_menu, view, RecyclerViewDragHolder.EDGE_RIGHT).getDragViewHolder();
     }
 
-   public  class ItemHolder extends RecyclerViewDragHolder implements View.OnClickListener {
+    private ItemHolder mItemHolder;
+
+   public class ItemHolder extends RecyclerViewDragHolder implements View.OnClickListener {
 
         public TextView name;
         public TextView id;
@@ -81,12 +78,13 @@ public class DragRecyclerAdapter extends RecyclerView.Adapter {
             role = (TextView) itemView.findViewById(R.id.contacts_list_item_role);
             avatar = (FrescoImageView) itemView.findViewById(R.id.contacts_list_item_avatar);
             item.setOnClickListener(this);
+            mItemHolder= this;
         }
 
         @Override
         public void onClick(View v) {
             if (mDragRectcleritemListener != null) {
-                mDragRectcleritemListener.onClick(this, v, mGroup);
+                mDragRectcleritemListener.onClick(this, v, position);
             }
         }
     }
@@ -96,13 +94,8 @@ public class DragRecyclerAdapter extends RecyclerView.Adapter {
         final ItemHolder itemHolder = (ItemHolder) RecyclerViewDragHolder.getHolder(holder);
         itemHolder.position = position;
         Book book = mBookList.get(position);
-        itemHolder.id.setText("" + book.getEdition()); // 员工编号
+        itemHolder.id.setText("" + book.getEdition()); // 版本
         itemHolder.name.setText(book.getName());//名字
-//        itemHolder.avatar.loadView(emp.getAvatar_url(), R.mipmap.pic_peopleface_1); // 头像
-//        String role = "";
-//        if (emp.getPositon() != null) {
-//            role = emp.getPositon();
-//        }
         itemHolder.role.setText(book.getPrice());//价格
 
         itemHolder.deleteItem.setOnClickListener(new View.OnClickListener() {
@@ -126,10 +119,11 @@ public class DragRecyclerAdapter extends RecyclerView.Adapter {
     private DeleteDialog.DeleteDialogListener deleteDialogListener = new DeleteDialog.DeleteDialogListener() {
         @Override
         public void listener(int position) {
-//            mEmpId = mBookList.get(position).getEmp_id();
-//            ArrayList<Integer> ids = new ArrayList<>();
-//            ids.add(mEmpId);
+            mBookList.get(position).delete();
+            mBookList.remove(position);
+            notifyDataSetChanged();
             Log.e(TAG,position +" ");
+
         }
     };
 

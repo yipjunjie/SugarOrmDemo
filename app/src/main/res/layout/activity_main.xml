@@ -4,24 +4,42 @@
     xmlns:tools="http://schemas.android.com/tools"
     android:id="@+id/activity_main"
     android:layout_width="match_parent"
+    android:layout_margin="5dp"
     android:layout_height="match_parent"
     android:orientation="vertical"
     tools:context="com.example.yejunjie.sugarormdemo.MainActivity">
 
-    <!--<TextView-->
-        <!--android:id="@+id/price"-->
-        <!--android:layout_width="wrap_content"-->
-        <!--android:layout_height="wrap_content"-->
-        <!--android:text="Hello World!" />-->
-    <!--<TextView-->
-        <!--android:id="@+id/edition"-->
-        <!--android:layout_width="wrap_content"-->
-        <!--android:layout_height="wrap_content"-->
-        <!--android:text="Hello World!" />-->
+    <LinearLayout
+        android:orientation="horizontal"
+        android:layout_width="match_parent"
+        android:layout_height="50dp">
+        <Button
+            android:onClick="AddClick"
+            android:layout_weight="1"
+            android:layout_width="0dp"
+            android:text="Add"
+            android:layout_height="match_parent" />
+        <Button
+            android:onClick="DeleteClick"
+            android:layout_weight="1"
+            android:layout_width="0dp"
+            android:text="delete"
+            android:layout_height="match_parent" />
+        <Button
+            android:text="update"
+            android:onClick="UpdateClick"
+            android:layout_weight="1"
+            android:layout_width="0dp"
+            android:layout_height="match_parent" />
+        <Button
+            android:text="query"
+            android:onClick="QueryClick"
+            android:layout_weight="1"
+            android:layout_width="0dp"
+            android:layout_height="match_parent" />
+    </LinearLayout>
     <com.example.yejunjie.sugarormdemo.view.VerticalRecyclerView
         android:id="@+id/contacts_list_group_rv"
         android:layout_width="match_parent"
         android:layout_height="match_parent" />
-
-
 </LinearLayout>

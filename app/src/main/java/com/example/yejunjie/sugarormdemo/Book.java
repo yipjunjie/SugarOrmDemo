@@ -8,20 +8,16 @@ import com.orm.SugarRecord;
 
 public class Book extends SugarRecord {
 
+    private String name;
+    private String price;
+    private String edition;
+
     public String getName() {
         return name;
     }
-
     public void setName(String name) {
         this.name = name;
     }
-
-    String name;
-    String price;
-    String edition;
-
-
-
     public String getPrice() {
         return price;
     }

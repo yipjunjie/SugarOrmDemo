@@ -18,7 +18,6 @@
     <dimen name="dialog_item_hight_10">10dp</dimen>
     <dimen name="dialog_width">280dp</dimen>
 
-    <!-- 施工日志的图片大小 -->
     <dimen name="pic_w">120dp</dimen>
     <dimen name="pic_sp">20dp</dimen>
 
