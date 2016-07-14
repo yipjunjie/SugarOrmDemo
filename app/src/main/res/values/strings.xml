@@ -1,0 +1,7 @@
+<resources>
+    <string name="app_name">SugarOrmDemo</string>
+    <string name="confirm_to_delete">确定删除?</string>
+    <string name="ok">确定</string>
+
+
+</resources>
