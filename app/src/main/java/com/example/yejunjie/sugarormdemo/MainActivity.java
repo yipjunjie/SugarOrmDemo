@@ -109,7 +109,7 @@ public class MainActivity extends AppCompatActivity {
                 mDragRecyclerAdapter.setData(mBookList);
                 mDragRecyclerAdapter.notifyDataSetChanged();
             }else{
-                book.update();
+                book.save();
                 mDragRecyclerAdapter.notifyDataSetChanged();
             }
 
